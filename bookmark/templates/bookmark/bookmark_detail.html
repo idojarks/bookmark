@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+
+{%block title%}Bookmark detail{%endblock%}
+
+{%block content%}
+<a href="{%url 'list'%}">Bookmark list</a>
+{{object.site_name|capfirst}}<br/>
+{{object.url}}<br/>
+{%endblock%}
+

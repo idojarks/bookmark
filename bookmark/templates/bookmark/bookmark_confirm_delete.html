@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block title%}Confirm delete{%endblock%}
+
+{%block content%}
+    <form action="" method="POST">
+    {% csrf_token %}
+        <div class="alert alert-danger">delete "{{object}}"?</div>
+        <input type="submit" value="delete" class="btn btn-danger">
+    </form>
+{%endblock%}
+
